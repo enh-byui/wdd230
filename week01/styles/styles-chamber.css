@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Spartan:wght@200&display=swap');
+
+:root {
+    /* change the values below to your chosen font(s) */
+    --heading-font: 'Roboto', Helvetica, Arial, sans-serif;
+    --paragraph-font: 'Spartan', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #F3F3F3;
+    font-family: var(--paragraph-font);
+    font-size: small;
+}
+
+p {
+    font-size: 15px;
+}
+
+#content {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.banner-box {
+    display: grid;
+    background-color: #124559;
+    place-items: center;
+    text-align: center;
+    color: #F3F3F3;
+    padding: 30px 0px 30px 0px;
+}
+
+main {
+    background-color: rgb(242, 242, 242);
+}
+
+footer {
+    margin-top: 50px;
+    background-color: #124559;
+    color: white;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    padding: 0px;
+    margin: 5px;
+}
+
+h2 {
+    padding: 0px;
+    margin: 0px;
+    color: #3f4041;
+}
+
+h3 {
+    padding: 0px;
+    margin: 0px;
+    color: #124559;
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 15px;
+}
+
+hr {
+    margin: 0px;
+    padding: 0px;
+    border: 2px solid #124559;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    padding: 0.3rem;
+    align-items: normal;
+    justify-content: space-around;
+}
+
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: #5c5f60;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    letter-spacing: 0.06em;
+}
+
+nav a:hover {
+    color: #2da0de;
+}
+
+.top-menu {
+    margin-top: 20px;
+}
+
+.menu-link {
+    text-transform: uppercase;
+    outline: none;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0px;
+    row-gap: 0px;
+    margin-top: 15px;
+}
+
+.item {
+    width: 100%;
+    font-family: sans-serif;
+    background-color: white;
+}
+
+.item-title {
+    padding: 20px 15px 20px 15px;
+    background-color: #e1e1e1;
+    color: #124559;
+    text-align: left;
+
+}
+
+.item-image-container {
+    margin: 5px;
+}
+
+.item-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.item-description {
+    margin-top: 20px;
+    padding: 5px 15px 5px 15px;
+}
+
+li {
+    font-size: 15px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}

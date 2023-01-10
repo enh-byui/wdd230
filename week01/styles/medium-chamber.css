@@ -1,0 +1,72 @@
+@media only screen and (max-width: 1024px) {
+
+    h1 {
+        padding: 0px;
+        margin: 5px;
+        font-size: 50px;
+    }
+
+    h2 {
+        padding: 0px;
+        margin: 15px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    h3 {
+        padding: 0px;
+        margin: 0px;
+        font-size: 35px;
+    }
+
+    h4 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+    footer p {
+        font-size: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        padding: 0.3rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav a {
+        padding: 20px;
+        text-decoration: none;
+        color: #5c5f60;
+        font-weight: 400;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        letter-spacing: 0.06em;
+    }
+
+    nav a:: {
+        color: #2da0de;
+    }
+
+    .menu-link {
+        text-transform: uppercase;
+        outline: none;
+        margin: 20px;
+    }
+
+    li {
+        font-size: 30px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 25px;
+    }
+
+
+}
