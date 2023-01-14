@@ -13,7 +13,7 @@ menubutton.addEventListener("click", () => {
 });
 
 colormode.addEventListener("click", () => {
-    document.body.classList.toggle("color-mode");
+    document.querySelector("main").classList.toggle("color-mode");
     lightmode.classList.toggle("lightmode-icon-show");
     darkmode.classList.toggle("darkmode-icon-show");
 });
