@@ -28,8 +28,83 @@ nav a {
     color: #ffffff;
 }
 
+.darkmode-icon, .lightmode-icon  {
+    width: 20px;
+}
+
+.lightmode-icon  {
+    display: none;
+}
+
+.lightmode-icon-show  {
+    display: inline;
+}
+
+.darkmode-icon  {
+    display: inline;
+}
+
+.darkmode-icon-show  {
+    display: none;
+}
+
+.menu {
+	position: fixed;
+	top: 0;
+    left: 0;
+    right: 0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background: #f7f7f7;
+	z-index: 10;
+	overflow: hidden;
+	box-shadow: 2px 0 20px rgba(0, 0, 0, 0.26);
+}
+
+.menu li a {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	padding: 1rem;
+	color: rgb(34, 60, 122);
+	position: relative;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	transition: background 0.5s ease-in-out;
+}
+
+.menu li a:hover,
+.menu li:first-child a {
+	background: #000;
+	color: #fff;
+}
+
+li a.menu-item {
+	display: none;
+}
+
+li a.open {
+	display: flex;
+}
+
+.close::before {
+	content: "❌ ";
+}
+
+.active{
+	background-color: #d9d9d9;
+	font-weight: 700;
+}
+
+.color-mode {
+    background: #000;
+    color: #fff;
+}
+
+
+
 header {
-    margin: 0px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
     background: rgb(34, 60, 122);
     color: #ffffff;
     display: grid;
@@ -51,7 +126,7 @@ header {
 }
 
 .header-body {
-    font-size: 30px;
+    font-size: 20px;
     margin: 0px;
 }
 
@@ -65,7 +140,6 @@ main {
     margin-right: auto;
     grid-gap: 10px;
     margin: 10px;
-
 }
 
 main h2 {
