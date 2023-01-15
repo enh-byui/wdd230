@@ -151,9 +151,20 @@ main {
 }
 
 
+main h1 {
+    font-size: 25px;
+    padding: 0rem;
+    margin: 0rem;
+    color: #1D3557;
+}
+
+#page-title {
+    border-bottom: .2rem solid #457B9D;
+}
+
 main h3 {
     padding: 0rem;
-    margin: 0rem 1rem;
+    margin: 0rem;
 }
 
 .card {
