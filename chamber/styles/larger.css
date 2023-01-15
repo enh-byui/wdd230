@@ -1,0 +1,175 @@
+@media only screen and (min-width: 600px) {
+
+    .content {
+        max-width: 960px;
+        margin: 0 auto;
+        background-color: white;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .logo {
+        padding: 0rem 1rem 0rem 1rem;
+        margin: 1rem 0rem -1rem 2rem;
+        height: 100px;
+        background: #fff;
+        display: block;
+        box-shadow: 0px 0px 4px 0px #292929;
+        overflow: hidden;
+        z-index: 1;
+
+    }
+
+    .menu {
+        position: relative;
+        margin: 0rem 2rem 0rem 0rem;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        box-shadow: 0px 0 0px rgba(0, 0, 0, 0.26);
+
+    }
+
+    .menu li a {
+
+        text-decoration: none;
+        text-align: center;
+        color: rgb(34, 60, 122);
+        border-bottom: 0px;
+        transition: background 0.5s ease-in-out;
+    }
+
+    li a.menu-item {
+        background: #1D3557;
+        color: #fff;
+        padding: 1.5rem;
+    }
+
+    li a.menu-item:hover {
+        color: #1D3557;
+        background: #fff;
+    }
+
+    li a.menu-item {
+        display: flex;
+    }
+
+    #home {
+        display: none;
+    }
+
+    #menu-icon {
+        width: 20px;
+        color: #ffffff;
+    }
+
+    header {
+        margin: 0px;
+    }
+
+    .banner-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .banner-box img {
+        grid-column: 1 / -1;
+        /* the -1 is just a fancy way to say "span all the columns" */
+        grid-row: 1;
+        max-width: 100%;
+    }
+
+    .action {
+        grid-column: 1;
+        grid-row: 1;
+        background-color: rgba(240, 240, 240, 0.8);
+        margin: 4rem;
+        padding: 2rem;
+        text-align: center;
+    }
+
+
+    .action button {
+        width: 10em;
+        background-color: #457B9D;
+        font-size: 1.2em;
+        color: #fff;
+        padding: 1rem;
+        border: 0px;
+    }
+
+    .action button:hover {
+
+        background-color: #A8DADC;
+
+        color: #fff;
+
+    }
+
+    main {
+        padding: 0rem .5rem 0rem .5rem;
+        margin-top: 2rem;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1.5rem;
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    #events {
+        grid-column: 1 / 3;
+        grid-row: 1;
+    }
+
+    #weather {
+        grid-column: 3 / 4;
+        grid-row: 1;
+    }
+
+    .announcement {
+        border-radius: 3px;
+        border: .05rem solid #457B9D;
+        overflow: hidden;
+    
+    }
+
+    #announcements-card {
+        grid-column: 1 / 4;
+        grid-row: 2;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: .7rem;
+    }
+
+    .announcement-title {
+        display: none;
+    }
+    
+
+    footer{
+        margin: 20px 0px 0px 0px;
+        background: #1D3557;
+        padding: 30px;
+        color: #ffffff;
+        text-align: center;
+        font-size: 15px;
+        display: flex;
+        justify-content:space-around;
+    }
+
+    .highlight {
+        font-size: 15px;
+    }
+
+}

@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #1D3557;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    background-color: #1D3557;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#menu-icon {
+    width: 20px;
+    color: #ffffff;
+}
+
+
+
+.logo {
+    padding: .5rem;
+    margin: 0rem 0rem -1rem 0rem;
+    height: 100px;
+    background: #fff;
+    box-shadow: 0px 0px 4px 0px #292929;
+    overflow: hidden;
+    z-index: 1;
+
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    z-index: 10;
+    overflow: hidden;
+    box-shadow: 2px 0 20px rgba(0, 0, 0, 0.26);
+}
+
+.menu li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+    color: rgb(34, 60, 122);
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: background 0.5s ease-in-out;
+}
+
+.menu li a:hover,
+.menu li:first-child a {
+    background: #1D3557;
+    color: #fff;
+    box-shadow: 0px 0 0px rgba(0, 0, 0, 0.26);
+}
+
+li a.menu-item {
+    display: none;
+    width: 150px;
+
+}
+
+li a.open {
+    display: flex;
+}
+
+.close::before {
+    content: "❌ ";
+}
+
+.active {
+    background-color: #d9d9d9;
+    font-weight: 700;
+}
+
+header {
+    margin: 0px;
+}
+
+.banner-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+}
+
+.banner-box img {
+    grid-column: 1 / -1;
+    /* the -1 is just a fancy way to say "span all the columns" */
+    grid-row: 1;
+    min-width: 100%;
+    height: 250px;
+    object-fit: none;
+    object-position: 100% 0;
+    "
+
+}
+
+.action {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: rgba(240, 240, 240, 0.8);
+    margin: 4rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.action button {
+    width: 10em;
+    background-color: #457B9D;
+    font-size: 1.2em;
+    color: #fff;
+    padding: 1rem;
+    border: 0px;
+}
+
+.action button:hover {
+
+    background-color: #A8DADC;
+
+    color: #fff;
+
+}
+
+main {
+    max-width: 760px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    grid-gap: 15px;
+    margin: 15px;
+}
+
+
+main h3 {
+    padding: 0rem;
+    margin: 0rem 1rem;
+}
+
+.card {
+    box-shadow: 1px 1px 4px 1px #888888;
+    border-radius: 3px;
+    overflow: hidden;
+
+}
+
+.card-header {
+    background: #457B9D;
+    color: #ffffff;
+    margin: 0rem;
+    padding: 0.7rem;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card p {
+    padding: 0rem;
+    margin: 1rem;
+}
+
+.readmore-link {
+    padding: 0rem;
+    margin: 1rem;
+    font-size: small;
+}
+
+.announcement {
+    border-radius: 3px;
+    border: .05rem solid #457B9D;
+    overflow: hidden;
+    margin: .5rem;
+
+}
+
+.announcement-header {
+    border-bottom: .1rem solid #457B9D;
+    color: #457B9D;
+    margin: 1rem;
+    padding: 0rem;
+}
+
+.announcement-header h3 {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.announcement-title {
+    margin: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    color: #1D3557;
+    font-size: 1.5rem;
+}
+
+.announcement-body {
+    padding: 1rem;
+}
+
+.announcement-body p {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+footer {
+    margin: 20px 0px 0px 0px;
+    background: #1D3557;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+}
+
+footer p {
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.highlight {
+    font-size: 1rem;
+}

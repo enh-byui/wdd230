@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 Erick Nava's chamber site">
+    <meta name="author" content="Erick Nava">
+    <meta property="og:title" content="Pachuca Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://enh-byui.github.io/wdd230/" />
+    <meta property="og:image" content="https://enh-byui.github.io/wdd230/images/reloj-de-pachuca.jpeg" />
+    <title>Pachuca Chamber of Commerce</title>
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+</head>
+
+<body>
+    <div class="content">
+        <nav>
+            <img src="./images/logo.png" alt="" class="logo">
+            <ul class="menu">
+                <li title="home" id="home">
+                    <a href="#" id="menu-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="menu-icon" viewBox="0 0 20 20" fill="currentColor"
+                            class="w-5 h-5">
+                            <path fill-rule="evenodd"
+                                d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">Discover</a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">Directory</a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">Join</a>
+                </li>
+
+            </ul>
+        </nav>
+        <header>
+            <div class="banner-box">
+
+                <img src="./images/hero-image.jpg" alt="Welcome image">
+
+                <div class="action">
+                    <button>Join the Chamber</button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="card" id="events">
+                <div class="card-header">
+                    <h3>Events</h3>
+                </div>
+                <div class="card-body">
+                    <h3>
+                        Ribbon Cutting - The Diamond stack
+                    </h3>
+                    <p>Join us fo the gran oppening of The Diamond Shack, Thursday at 10:00 pm.</p>
+                    <a href="#" class="readmore-link"> more info ...</a>
+                </div>
+            </section>
+            <section class="card" id="weather">
+                <div class="card-header">
+                    <h3>Weather</h3>
+                </div>
+                <div class="card-body">
+                    <p> Humidity: 35% </p>
+                    <p> Wind Chill: N/A</p>
+                </div>
+            </section>
+            <section class="card" id="announcements-card">
+                <div class="announcement-title">Member Spotlights</div>
+                <div class="announcement">
+                    <div class="announcement-header">
+                        <h3>Announcement 1</h3>
+                    </div>
+                    <div class="announcement-body">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                        </p>
+                    </div>
+                </div>
+                <div class="announcement">
+                    <div class="announcement-header">
+                        <h3>Announcement 2</h3>
+                    </div>
+                    <div class="announcement-body">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                        </p>
+                    </div>
+                </div>
+                <div class="announcement">
+                    <div class="announcement-header">
+                        <h3>Announcement 3</h3>
+                    </div>
+                    <div class="announcement-body">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+        <footer>
+            <p>© <span id="date"></span> -
+                Pachuca Chamber of Commerce
+            </p>
+            <p class="highlight">Erick Nava</p>
+            <p>WDD 230 Project</p>
+            <p id="lastModified"></p>
+        </footer>
+
+    </div>
+    <script src="./scripts/getDates.js"></script>
+    <script src="./scripts/hamburger-menu.js"></script>
+
+</body>
+
+</html>
