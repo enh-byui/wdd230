@@ -159,6 +159,25 @@
     .announcement-title {
         display: none;
     }
+
+    /* Discover page */
+
+    #gallery {
+        grid-column: 1 / 3;
+        grid-row: 2;
+    }
+
+    .gallery img:hover {
+        box-shadow: 0 0 10px #333;
+        filter: brightness(70%);
+
+    }
+
+    #sidebar {
+        grid-column: 3 / 4;
+        grid-row: 2;
+    }
+
     
 
     footer{

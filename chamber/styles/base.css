@@ -239,6 +239,13 @@ main h3 {
     padding: 0rem;
 }
 
+/* Discover Page */
+
+.gallery img {
+    margin-top: 20px;
+    width: 100%;
+}
+
 footer {
     margin: 20px 0px 0px 0px;
     background: #1D3557;
