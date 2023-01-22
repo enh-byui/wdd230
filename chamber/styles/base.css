@@ -244,6 +244,7 @@ main h3 {
 .gallery img {
     margin-top: 20px;
     width: 100%;
+    height: auto;
 }
 
 footer {
