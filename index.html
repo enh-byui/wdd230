@@ -59,7 +59,7 @@
     </nav>
     <header>
         <div class="header-image">
-            <img src="./images/profile-image.jpeg" alt="Profile Image">
+            <img src="./images/profile-image.jpeg" alt="Profile Image" loading="lazy">
         </div>
         <div class="header-body">
             <h1>Erick Nava</h1>
@@ -67,6 +67,16 @@
 
     </header>
     <main>
+        <div class="hero" id="hero">
+            <picture>
+                <source media="(min-width: 960px)" srcset="./images/bogota_colombia_temple_lds_2.webp">
+                <source media="(min-width: 400px)" srcset="./images/bogota_colombia_temple_lds.webp">
+                <img src="./images/bogota_colombia_temple_lds.webp" alt="Bogota Colombia Temple" loading="lazy">
+            </picture>
+            <div class="herolabel">
+                <p>Bogota Colombia Temple</p>
+            </div>
+        </div>
         <h2 id="site-title">WDD 230: Course Activity Portal</h2>
         <section class="card" id="learning-activity">
             <div class="card-header">
@@ -84,8 +94,8 @@
                             href="./week02/bom.html">DOM Manipulation</a>
                     </li>
                     <li>
-                        Week 03: <a href="./week03/images/landscape.webp">WebP</a> | 
-                        <a href="./week03/lazyload.html">Lazy Load</a> | 
+                        Week 03: <a href="./week03/images/landscape.webp">WebP</a> |
+                        <a href="./week03/lazyload.html">Lazy Load</a> |
                         <a href="https://codepen.io/enh-byui/pen/JjBpPdB?editors=1100">Responsive Image (srcset)</a> |
                         <a href="./week03/bom.html">BOM localStorage</a>
                     </li>
@@ -120,14 +130,18 @@
             </div>
             <div class="card-body">
                 Weather <br>
-                Visit Count: 15
+                Visit Count: <span class="visits"></span>
             </div>
         </section>
+
     </main>
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7497.141740952334!2d-98.77616868857069!3d20.026517571898776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1674187787769!5m2!1ses-419!2smx"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="map">
+        <iframe id="map"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7497.141740952334!2d-98.77616868857069!3d20.026517571898776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1674187787769!5m2!1ses-419!2smx"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
     <footer>
         <p>© <span id="date"></span> -
             Erick Nava -
@@ -135,6 +149,7 @@
         </p>
         <p class="highlight" id="lastModified"></p>
     </footer>
+    <script src="./scripts/scripts.js"></script>
     <script src="./scripts/getDates.js"></script>
     <script src="./scripts/hamburger-menu.js"></script>
 </body>

@@ -45,6 +45,8 @@
         transition: background 0.5s ease-in-out;
     }
 
+
+
     #home {
         display: none;
     }
@@ -75,18 +77,34 @@
         gap: 10px;
         grid-auto-rows: minmax(100px, auto);
         margin: 0px 200px 0px 200px;
+    }
 
+    .hero {
+        grid-column: 1 / 3;
+        margin: 0px auto;
+        position: relative;
+        border: 0px solid rgba(0,0,0,.1);
+        max-width: 100%;
+        height: auto;
+    }
 
+    .hero img {
+        max-width: 100%;
+        height: auto;
     }
 
     #site-title {
         grid-column: 1 / 3;
-        grid-row: 1 / 2;
+        grid-row: 2 / 3;
         margin-top: 30px;
         margin-bottom: 25px;
         width: 98%;
         font-weight: bolder;
         font-size: 22px;
+    }
+
+    .card {
+        margin: 0px;
     }
 
     .card-header {
@@ -95,21 +113,30 @@
 
     #learning-activity {
         grid-column: 1 / 2;
-        grid-row: 2 / 4;
+        grid-row: 3 / 5;
     }
 
     #chamber-project {
         grid-column: 2 / 3;
-        grid-row: 2 / 3;
+        grid-row: 3 / 4;
     }
 
     #information {
         grid-column: 2 / 3;
-        grid-row: 3 / 4;
+        grid-row: 4 / 5;
     }
 
     footer {
         margin: 30px 0px 0px 0px;
+    }
+
+    .map {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+        margin: 10px 200px 0px 200px;
     }
 
 }
