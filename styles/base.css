@@ -1,3 +1,9 @@
+:root {
+    --primary: rgba(34, 60, 122);
+    --text-color-light: rgba(255, 255, 255);
+    --background-color-dark: rgb(0, 0, 0);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
@@ -8,7 +14,7 @@ body {
 }
 
 nav {
-    background-color: #000000;
+    background-color: var(--background-color-dark);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,13 +25,13 @@ nav {
 }
 
 nav a {
-    color: #ffffff;
+    color: var(--text-color-light);
     text-decoration: none;
 }
 
 #menu-icon {
     width: 20px;
-    color: #ffffff;
+    color: var(--text-color-light);
 }
 
 .darkmode-icon, .lightmode-icon  {
@@ -67,7 +73,7 @@ nav a {
 	text-decoration: none;
 	text-align: center;
 	padding: 1rem;
-	color: rgb(34, 60, 122);
+	color: var(--primary);
 	position: relative;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	transition: background 0.5s ease-in-out;
@@ -75,8 +81,8 @@ nav a {
 
 .menu li a:hover,
 .menu li:first-child a {
-	background: #000;
-	color: #fff;
+	background: var(--background-color-dark);
+	color: var(--text-color-light);
 }
 
 li a.menu-item {
@@ -97,16 +103,16 @@ li a.open {
 }
 
 .color-mode {
-    background: #000;
-    color: #fff;
+    background: var(--background-color-dark);
+    color: var(--text-color-light);
 }
 
 
 
 header {
     margin: 20px 0px 0px 0px;
-    background: rgb(34, 60, 122);
-    color: #ffffff;
+    background: var(--primary);
+    color: var(--text-color-light);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
@@ -167,10 +173,10 @@ main {
 	position: absolute;
 	top: 30px;
 	left: 30px;
-	background: radial-gradient(#fff, #4D5B97);
+	background: radial-gradient(var(--text-color-light), #4D5B97);
 	border: 1px solid rgba(0,0,0,.75);
 	padding: 1.5rem;
-	box-shadow: 0 0 3rem #fff;
+	box-shadow: 0 0 3rem var(--text-color-light);
 	opacity: 0.75;
 	/* Buenas */
 }
@@ -201,10 +207,14 @@ main h2 {
 }
 
 .card-header {
-    background: rgb(34, 60, 122);
-    color: #ffffff;
+    background: var(--primary);
+    color: var(--text-color-light);
     margin: 0px;
     padding: 10px;
+}
+
+.card-header h3{
+    margin: 5px;
 }
 
 .card-body {
@@ -213,9 +223,9 @@ main h2 {
 
 footer {
     margin: 20px 0px 0px 0px;
-    background: rgb(34, 60, 122);
+    background: var(--primary);
     padding: 10px;
-    color: #ffffff;
+    color: var(--text-color-light);
     text-align: center;
 }
 
@@ -241,4 +251,110 @@ footer {
     width: 100%;
     height: 450px;
 
+}
+
+/*----------- FORM --------------*/
+
+.user-form {
+    max-width: 760px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    grid-gap: 10px;
+}
+
+.user-form form {
+    width: 100%;
+}
+
+form label.top{
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+}
+form label.top-rating{
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+}
+form label.top input{
+
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem 0 .75rem .0;
+    color: #555;
+    width: 100%;
+    background-color: rgba(0,0,0,0.1);
+    max-width: 760px;
+}
+form label.top-rating input{
+    display: block;
+    color: #555;
+    width: 100%;
+    background-color: rgba(0,0,0,0.1);
+    max-width: 760px;
+}
+form input.submitBtn{
+    display: block;
+    border: none;
+    background-color: var(--primary);
+    color: var(--text-color-light);
+    border-radius: .2rem;
+    padding: .75rem 1.5rem;
+    width: 100%;
+    margin-top: 20px;
+    max-width: 760px;
+}
+form label.top input:required {
+    border: red solid 1px;
+}
+form label.top input:required:valid{
+    border: green solid 1px;
+}
+
+#formmessage {
+	display: none;
+	text-align: center;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	background-color: #aa3333;
+	color: #fff;
+	padding: 0.5rem;
+}
+
+/*----------- TABLE --------------*/
+
+.user-table {
+    max-width: 760px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-gap: 10px;
+}
+
+.user-table table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+th {
+    background-color: var(--primary);
+    color: var(--text-color-light);
+    padding: 10px;
+}
+
+td {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 5px;
 }

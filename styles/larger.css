@@ -139,4 +139,33 @@
         margin: 10px 200px 0px 200px;
     }
 
+    .user-form {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+        margin: 10px 200px 0px 200px;
+        
+    }
+    #contact-form{
+        margin-left: 20%;
+        margin-right: 20%;
+        display: block;
+        align-items: center;
+    }
+
+    form label.top input, form label.top-rating input, form input.submitBtn{
+        max-width: 100%;
+    }
+
+    .user-table {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+        margin: 10px 200px 0px 200px;
+        
+    }
 }
