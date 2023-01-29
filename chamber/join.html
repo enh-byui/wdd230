@@ -60,63 +60,50 @@
         </header>
         <main>
             <div id="page-title">
-                <h1>Home Page</h1>
+                <h1>Join Page</h1>
             </div>
             
-            <section class="card" id="events">
+            <section class="card" id="join-us">
                 <div class="card-header">
-                    <h2>Events</h2>
+                    <h2>Join Us Form</h2>
                 </div>
                 <div class="card-body">
-                    <h3>
-                        Ribbon Cutting - The Diamond stack
-                    </h3>
-                    <p>Join us fo the gran oppening of The Diamond Shack, Thursday at 10:00 pm.</p>
-                    <a href="#" class="readmore-link"> more info ...</a>
+
+                    <form action="thankyou.html" method="get">
+                        <label class="top">First Name *<input type="text" name="firstName" id="firstName" required></label>
+                        <label class="top">Last Name *<input type="text" name="lastName" id="lastName" required></label>
+                        <label class="top">Title<input type="text" name="businessPosition" id="businessPosition" pattern="[a-zA-Z][a-zA-Z -]{7,}"></label>
+                        <label class="top">Email *<input type="email" name="emailInput" id="emailInput" placeholder="email@gmail.com" required></label>
+                        <label class="top">Cell Phone Number *<input type="cel" name="cellphone" id="cellphone" required></label>
+                        <label class="top">Business Name / Title *<input type="text" name="businessName" id="businessName" required></label>
+                        
+                        <label class="top">Membership
+                            <select name="membership" id="membership">
+                                <option value="">Please Select &#9662;</option>
+                                <option value="np">Non Profit</option>
+                                <option value="bronze">Bronze</option>
+                                <option value="silver">Silver</option>
+                                <option value="gold">Gold</option>
+                            </select>
+                        </label>
+
+                        <label class="top">Business Description *<textarea cols="30" rows="5" name="businessDescription" id="businessDescription"></textarea></label>
+                        <input type="hidden" id="currentDate" name="currentDate">
+                        <input type="submit" value="Join Now" class="submitBtn">
+
+
+                    </form>
                 </div>
             </section>
             <section class="card" id="weather">
                 <div class="card-header">
-                    <h2>Weather</h2>
+                    <h2>Membership Benefits</h2>
                 </div>
-                <div class="card-body">
-                    <p> Humidity: 35% </p>
-                    <p> Wind Chill: N/A</p>
+                <div class="card-body" id="benefits">
+                    <span id="cost"></span>
+                    <span id="discount"></span>
+                    <span id="training"></span>
                 </div>
-            </section>
-            <section class="card" id="announcements-card">
-                <div class="announcement-title">Member Spotlights</div>
-                <div class="announcement">
-                    <div class="announcement-header">
-                        <h3>Announcement 1</h3>
-                    </div>
-                    <div class="announcement-body">
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                        </p>
-                    </div>
-                </div>
-                <div class="announcement">
-                    <div class="announcement-header">
-                        <h3>Announcement 2</h3>
-                    </div>
-                    <div class="announcement-body">
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                        </p>
-                    </div>
-                </div>
-                <div class="announcement">
-                    <div class="announcement-header">
-                        <h3>Announcement 3</h3>
-                    </div>
-                    <div class="announcement-body">
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                        </p>
-                    </div>
-                </div>
-
             </section>
         </main>
         <footer>
@@ -131,6 +118,7 @@
     </div>
     <script src="./scripts/getDates.js"></script>
     <script src="./scripts/hamburger-menu.js"></script>
+    <script src="./scripts/scripts.js"></script>
 
 </body>
 

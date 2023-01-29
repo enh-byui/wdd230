@@ -264,3 +264,54 @@ footer p {
 .highlight {
     font-size: 1rem;
 }
+
+
+/*----FORM----*/
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #1D3557;
+    font-size: 1rem;
+}
+form label.top input, form label.top textarea {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem 0 .75rem 0;
+    color: #555;
+    width: 100%;
+    background-color: rgba(0,0,0,0.1);
+}
+form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    background-color: rgba(0,0,0,0.1);
+}
+form label.sbs{
+    display: block;
+    padding: .3rem 0;
+    color: #555;
+}
+form input.submitBtn{
+    border: none;
+    background-color: #1D3557;
+    color: white;
+    border-radius: .2rem;
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px;
+}
+
+#benefits {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}

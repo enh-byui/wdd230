@@ -1,19 +1,36 @@
-const visitsDisplay = document.querySelector(".last-visit");
 
-// get the stored value in localStorage
-let lastVisitDate = new Date(window.localStorage.getItem("last-visit"));
-let currentDate = new Date();
+//form
+const membershipSelector = document.querySelector('#membership');
+const costSelector = document.querySelector("#cost");
+const discountSelector = document.querySelector("#discount");
+const trainingSelector = document.querySelector("#training");
+const dateSelector = document.querySelector("#currentDate");
+dateSelector.innerHTML = new Date();
+console.log(new Date());
 
+membershipSelector.addEventListener('change', (event) =>{
+  
 
+  if(event.target.value == "np") {
+    costSelector.innerHTML = 'Cost: $0';
+    discountSelector.innerHTML = "Discounts: 100%";
+    trainingSelector.innerHTML = "Training Price: $0";
+  } else if (event.target.value == "bronze") {
+    costSelector.innerHTML = 'Cost: $200';
+    discountSelector.innerHTML = "Discounts: 10%";
+    trainingSelector.innerHTML = "Training Price: $220";
+  } else if (event.target.value == "silver") {
+    costSelector.innerHTML = 'Cost: $150';
+    discountSelector.innerHTML = "Discounts: 15%";
+    trainingSelector.innerHTML = "Training Price: $150";
+  } else if (event.target.value == "gold") {
+    costSelector.innerHTML = 'Cost: $100';
+    discountSelector.innerHTML = "Discounts: 20%";
+    trainingSelector.innerHTML = "Training Price: $100";
+  } else {
+    costSelector.innerHTML = '';
+    discountSelector.innerHTML = "";
+    trainingSelector.innerHTML = "";
+  }
 
-// determine if this is the first visit or display the number of visits.
-if (lastVisitDate.getTime() == 0) {
-  visitsDisplay.textContent = `This is your first visit!`;
-} else {
-  let difference = lastVisitDate.getTime() - currentDate.getTime();
-  let totalDays = Math.ceil(difference / (1000 * 3600 * 24));
-  visitsDisplay.textContent = totalDays + " days ago";
-}
-
-// store the new date
-localStorage.setItem("last-visit", currentDate);
+});
