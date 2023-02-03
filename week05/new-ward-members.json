@@ -1,0 +1,23 @@
+{
+    "family-name": "Wilson",
+    "arrival-date": "12/12/2023",
+    "members-number": "3",
+    "bishopric-visit": "Yes",
+    "family-members": [
+        {
+            "name": "Steven",
+            "gender": "Male",
+            "birthday": "10/10/1970"
+        },
+        {
+            "name": "Jane",
+            "gender": "Female",
+            "birthday": "09/09/1971"
+        },
+        {
+            "name": "Nick",
+            "gender": "Male",
+            "birthday": "01/01/2000"
+        }
+    ]
+}
