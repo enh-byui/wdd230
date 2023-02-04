@@ -4,9 +4,9 @@ const membershipSelector = document.querySelector('#membership');
 const costSelector = document.querySelector("#cost");
 const discountSelector = document.querySelector("#discount");
 const trainingSelector = document.querySelector("#training");
-const dateSelector = document.querySelector("#currentDate");
-dateSelector.innerHTML = new Date();
-console.log(new Date());
+//const dateSelector = document.querySelector("#currentDate");
+//dateSelector.innerHTML = new Date();
+//console.log(new Date());
 
 membershipSelector.addEventListener('change', (event) =>{
   
