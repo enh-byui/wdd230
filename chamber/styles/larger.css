@@ -183,6 +183,10 @@
         grid-row: 2;
     }
 
+    #directory {
+        grid-column: 1 / 4;
+        grid-row: 2;
+    }
     
 
     footer{
@@ -199,5 +203,14 @@
     .highlight {
         font-size: 15px;
     }
+
+
+    .list section {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        margin: 0;
+        padding: 0.25rem;
+    }
+    
 
 }

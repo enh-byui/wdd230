@@ -45,7 +45,6 @@
                 <li>
                     <a href="join.html" class="menu-item">Join</a>
                 </li>
-
             </ul>
         </nav>
         <header>
@@ -60,57 +59,19 @@
         </header>
         <main>
             <div id="page-title">
-                <h1>Discover</h1>
+                <h1>Directory</h1>
             </div>
             
-            <section class="card" id="gallery">
-                <div class="card-header">
-                    <h2>Gallery</h2>
+            <section class="card" id="directory">
+                <div class="card-header menu-view">
+                    <h2>Members</h2>
+                    <div class="menu-view-buttons">
+                        <button class="btn" id="grid">⏹️ Grid</button>
+                        <button class="btn" id="list">📄 List</button>
+                    </div>
                 </div>
                 <div class="card-body">
-                    <picture class="gallery">
-                        <img src="./images/ben_gurion_park.webp" alt="Ben Gurion Park" loading="lazy" width="400" height="350">
-                    </picture>
-                    <h3> Ben Gurion Park </h3>
-                    <picture class="gallery">
-                        <img src="./images/pachuca_city.webp" alt="Pachuca downtown" loading="lazy" width="400" height="350">
-                    </picture>
-                    <h3> Pachuca Downtown </h3>
-                    <picture class="gallery">
-                        <img src="./images/pachuca_painting.webp" alt="Pachuca city" loading="lazy" width="400" height="350">
-                    </picture>
-                    <h3> Pachuca City </h3>
-                    <picture class="gallery">
-                        <img src="./images/pachuca_stadium.webp" alt="Pachuca Stadium" loading="lazy" width="400" height="350">
-                    </picture>
-                    <h3> Pachuca Stadium </h3>
-                    <picture class="gallery">
-                        <img src="./images/plaza-independencia-pachuca.webp" alt="Pachuca reloj Monumental" loading="lazy" width="400" height="350">
-                    </picture>
-                    <h3> Pachuca "Reloj Monumental" </h3>
-                    
-
-                </div>
-            </section>
-            <section class="card" id="sidebar">
-                <div class="card-header">
-                    <h2>Information</h2>
-                </div>
-                <div class="card-body">
-                    <p> Population: 277,375 </p>
-                    <p> Elevation: 2,432 m (7,979 ft)</p>
-                    <p> Timezone: UTC-6</p>
-                    <p> Nickname: "La bella airosa"</p>
-                </div>
-                <hr>
-                <div class="card-body">
-                    <h3>Next Events</h3>
-                    <p> San Francisco Festival / October '23</p>
-                    <p> Pastes Festival / September '23</p>
-                </div>
-                <hr>
-                <div class="card-body">
-                    Last visit: <span class="last-visit"></span>
+                    <article class="grid" id="cards"></article>
                 </div>
             </section>
         </main>
@@ -124,9 +85,10 @@
         </footer>
 
     </div>
-    <script src="./scripts/scripts.js"></script>
     <script src="./scripts/getDates.js"></script>
     <script src="./scripts/hamburger-menu.js"></script>
+    <script src="./scripts/directory.js"></script>
+
 
 </body>
 

@@ -267,13 +267,16 @@ footer p {
 
 
 /*----FORM----*/
-form label.top, form div {
+form label.top,
+form div {
     display: block;
     padding-top: 1rem;
     color: #1D3557;
     font-size: 1rem;
 }
-form label.top input, form label.top textarea {
+
+form label.top input,
+form label.top textarea {
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
@@ -282,8 +285,9 @@ form label.top input, form label.top textarea {
     padding: .75rem 0 .75rem 0;
     color: #555;
     width: 100%;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
 }
+
 form label.top select {
     -webkit-appearance: none;
     display: block;
@@ -293,14 +297,16 @@ form label.top select {
     padding: .75rem;
     color: #555;
     width: 100%;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
 }
-form label.sbs{
+
+form label.sbs {
     display: block;
     padding: .3rem 0;
     color: #555;
 }
-form input.submitBtn{
+
+form input.submitBtn {
     border: none;
     background-color: #1D3557;
     color: white;
@@ -314,4 +320,109 @@ form input.submitBtn{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+}
+
+
+/*----Directory----*/
+
+
+.menu-view{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.btn {
+  background-color: rgba(204, 204, 204, 0.499);
+  border-radius: 8px;
+  border-width: 0;
+  color: #333333;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 5px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 10px;
+
+}
+
+.grid section {
+    text-align: center;
+    border: 1px solid #b9b9b9;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.grid img {
+    margin-top: 20px;
+    width: 60%;
+    height: 50px;
+    margin-bottom: 10px;
+
+}
+
+.grid h3 {
+    margin: 0px;
+}
+
+.grid h4 {
+    margin: 0px;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	margin: 0;
+	padding: 0.25rem;
+    margin-bottom: 10px;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section h1 {
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.list section h4 {
+	font-size: .8rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section a {
+	font-size: .8rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+	background-color: #A8DADC;
 }

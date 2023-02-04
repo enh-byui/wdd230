@@ -1,0 +1,112 @@
+{
+    "members": [
+        {
+            "name": "Saga Digital",
+            "address": "MINERO 802 6, VENUSTIANO CARRANZA , PACHUCA DE SOTO , HGO , C.P.42030",
+            "phone": "(771)212-9560",
+            "website": "sagadigital.com",
+            "logo": "https://img.logoipsum.com/260.svg",
+            "membership": "Bronze",
+            "service": "Technology"
+        },
+        {
+            "name": "Vymec Fuego",
+            "address": "AV UNIVERSIDAD 333 A, CEUNI , MINERAL DE LA REFORMA , HGO , C.P.42182",
+            "phone": "(771)454-0009",
+            "website": "vymec.com",
+            "logo": "https://img.logoipsum.com/259.svg",
+            "membership": "Silver",
+            "service": "Services"
+        },
+        {
+            "name": "Ortíz Electronic",
+            "address": "JUAREZ NORTE 38, CENTRO , TIZAYUCA , HGO , C.P.43800",
+            "phone": "(779)796-7944",
+            "website": "ortelectonics.com",
+            "logo": "https://img.logoipsum.com/258.svg",
+            "membership": "Gold",
+            "service": "Electronics"
+        },
+        {
+            "name": "Dental Local Service",
+            "address": "AV JUAREZ ORIENTE # 35 INT. 2, CENTRO , SAN JUAN DEL RIO , QRO , C.P.76800",
+            "phone": "(427)236-8438",
+            "website": "dentalservice.com",
+            "logo": "https://img.logoipsum.com/257.svg",
+            "membership": "Gold",
+            "service": "Dental"
+        },
+        {
+            "name": "Pits Hidalgo",
+            "address": "A ACTOPAN 100, VENTA PRIETA , PACHUCA DE SOTO , HGO , C.P.42080",
+            "phone": "(771)718-3720",
+            "website": "pitshidalgo.com",
+            "logo": "https://img.logoipsum.com/256.svg",
+            "membership": "Silver",
+            "service": "Car Services"
+        },
+        {
+            "name": "Multillantas Olisan",
+            "address": "EMILIANO ZAPATA 60, CENTRO , PACHUCA DE SOTO , HGO , C.P.42000",
+            "phone": "(738)735-7644",
+            "website": "wheels.com",
+            "logo": "https://img.logoipsum.com/255.svg",
+            "membership": "Bronze",
+            "service": "Tires"
+        },
+        {
+            "name": "Technical Phone",
+            "address": "BENITO JUAREZ 1401 C, PERIODISTA , PACHUCA DE SOTO , HGO , C.P.42060",
+            "phone": "(771)718-9712",
+            "website": "techphone.com",
+            "logo": "https://img.logoipsum.com/254.svg",
+            "membership": "Bronze",
+            "service": "Telco"
+        },
+        {
+            "name": "Elite Bikes",
+            "address": "DE SN JAVIER 4 MZ 4, VALLE DE SAN JAVIER , HGO , C.P.",
+            "phone": "(771)718-6193",
+            "website": "elitebikes.com",
+            "logo": "https://img.logoipsum.com/253.svg",
+            "membership": "Silver",
+            "service": "Bikes"
+        },
+        {
+            "name": "Easysoft",
+            "address": "CALLE GENERAL VICENTE SEGURA 307 INT. 104, COLONIA PERIODISTAS , PACHUCA DE SOTO , HGO , C.P.42060",
+            "phone": "(771)212-4823",
+            "website": "easysoft.com",
+            "logo": "https://img.logoipsum.com/252.svg",
+            "membership": "Gold",
+            "service": "Software"
+        },
+        {
+            "name": "Business Services",
+            "address": "DR ARNULFO G FARIAS 307, DOCTORES , PACHUCA DE SOTO , HGO , C.P.42090",
+            "phone": "(771)377-1541",
+            "website": "busineess.com",
+            "logo": "https://img.logoipsum.com/251.svg",
+            "membership": "No Profit",
+            "service": "Services"
+        },
+        {
+            "name": "Censur Solar",
+            "address": "RÍO MOCTEZUMA 219, ISSSTE , PACHUCA , HGO , C.P.42083",
+            "phone": "(771)209-4677",
+            "website": "censur.com",
+            "logo": "https://img.logoipsum.com/250.svg",
+            "membership": "Bronze",
+            "service": "Solar Panels"
+        },
+        {
+            "name": "Accounting",
+            "address": "SAN MATEO 125, CARBONERAS , MINERAL DE LA REFORMA , HGO , C.P.42183",
+            "phone": "(771)716-1950",
+            "website": "accountingsupervision.com",
+            "logo": "https://img.logoipsum.com/249.svg",
+            "membership": "Gold",
+            "service": "Accounting"
+        }
+    ]
+}
