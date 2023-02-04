@@ -1,4 +1,4 @@
-const jsonUrl = "../data/week-links.json";
+const jsonUrl = "data/week-links.json";
 const linkList = document.querySelector("#linkList");
 
 async function apiLinkFetch() {
