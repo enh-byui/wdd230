@@ -221,6 +221,11 @@ main h2 {
     padding: 20px;
 }
 
+.card-body h4{
+    padding: 0px;
+    margin: 0px;
+}
+
 footer {
     margin: 20px 0px 0px 0px;
     background: var(--primary);

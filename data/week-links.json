@@ -1,0 +1,126 @@
+{
+  "weeks": [
+    {
+      "Week 01": [
+        {
+          "link": "week01/holygrail.html",
+          "name": "Grail",
+          "link-type": "local",
+          "target": ""
+        },
+        {
+          "link": "week01/media-query.html",
+          "name": "Media Query",
+          "link-type": "local",
+          "target": ""
+        }
+      ]
+    },
+    {
+      "Week 02": [
+        {
+          "link": "week02/design.html",
+          "name": "Web Design Principles",
+          "link-type": "local",
+          "target": ""
+        },
+        {
+          "link": "https://codepen.io/enh-byui/pen/XWBgKrM",
+          "name": "CodePen Menu",
+          "link-type": "codepen",
+          "target": "_blank"
+        },
+        {
+          "link": "week02/bom.html",
+          "name": "DOM Manipulation",
+          "link-type": "local",
+          "target": ""
+        }
+      ]
+    },
+    {
+      "Week 03": [
+        {
+          "link": "week03/images/landscape.webp",
+          "name": "WebP",
+          "link-type": "local",
+          "target": ""
+        },
+        {
+          "link": "week03/lazyload.html",
+          "name": "Lazy Load",
+          "link-type": "local",
+          "target": ""
+        },
+        {
+          "link": "https://codepen.io/enh-byui/pen/JjBpPdB?editors=1100",
+          "name": "Responsive Image (srcset)",
+          "link-type": "codepen",
+          "target": "_blank"
+        },
+        {
+          "link": "week03/bom.html",
+          "name": "BOM Local Storage",
+          "link-type": "local",
+          "target": ""
+        }
+      ]
+    },
+    {
+      "Week 04": [
+        {
+          "link": "https://codepen.io/enh-byui/pen/XWBYWPx",
+          "name": "CSS Pseudo-Classes",
+          "link-type": "codepen",
+          "target": "_blank"
+        },
+        {
+          "link": "week04/images/css_combinators.png",
+          "name": "CSS Combinators",
+          "link-type": "local",
+          "target": ""
+        },
+        {
+          "link": "week04/tablebuild.html",
+          "name": "HTML Tables",
+          "link-type": "local",
+          "target": ""
+        },
+        {
+          "link": "week04/form-start/index.html",
+          "name": "HTML Forms",
+          "link-type": "local",
+          "target": ""
+        }
+      ]
+    },
+    {
+      "Week 05": [
+        {
+          "link": "https://codepen.io/enh-byui/pen/poZqYjO",
+          "name": "Pseudo Elements",
+          "link-type": "codepen",
+          "target": "_blank"
+        },
+        {
+          "link": "week05/new-ward-members.json",
+          "name": "JSON",
+          "link-type": "local",
+          "target": ""
+        },
+        {
+          "link": "week05/prophets.html",
+          "name": "Fetch API",
+          "link-type": "local",
+          "target": ""
+        },
+        {
+          "link": "week05/weather.html",
+          "name": "Weather API",
+          "link-type": "local",
+          "target": ""
+        }
+      ]
+    }
+  ]
+}

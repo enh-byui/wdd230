@@ -83,39 +83,7 @@
                 <h3>Learning Activities</h3>
             </div>
             <div class="card-body">
-                <ul>
-                    <li>
-                        Week 01: <a href="./week01/holygrail.html">Grail</a> | <a href="./week01/media-query.html">Media
-                            Query</a>
-                    </li>
-                    <li>
-                        Week 02: <a href="./week02/design.html">Web Design Principles</a> | <a
-                            href="https://codepen.io/enh-byui/pen/XWBgKrM" target="_blank">CodePen Menu</a> | <a
-                            href="./week02/bom.html">DOM Manipulation</a>
-                    </li>
-                    <li>
-                        Week 03: <a href="./week03/images/landscape.webp">WebP</a> |
-                        <a href="./week03/lazyload.html">Lazy Load</a> |
-                        <a href="https://codepen.io/enh-byui/pen/JjBpPdB?editors=1100">Responsive Image (srcset)</a> |
-                        <a href="./week03/bom.html">BOM localStorage</a>
-                    </li>
-                    <li>
-                        Week 04: <a href="https://codepen.io/enh-byui/pen/XWBYWPx" target="_blank">CSS
-                            Pseudo-Classes</a> |
-                        <a href="./week04/images/css_combinators.png" target="_blank">CSS Combinators</a> |
-                        <a href="./week04/tablebuild.html">HTML Tables</a> |
-                        <a href="./week04/form-start/index.html">HTML Forms</a>
-                    </li>
-                    <li>
-                        Week 05: <a href="https://codepen.io/enh-byui/pen/poZqYjO">Pseudo Elements</a> |
-                        <a href="./week05/new-ward-members.json">JSON</a> |
-                        <a href="./week05/prophets.html">Fetch API</a> |
-                        <a href="./week05/weather.html">Weather API</a>
-                    </li>
-                    <li>
-                        Week 06:
-                    </li>
-                </ul>
+                <ul id="linkList"></ul>
             </div>
         </section>
         <section class="card" id="chamber-project">
@@ -136,7 +104,12 @@
                 <h3>Information</h3>
             </div>
             <div class="card-body">
-                Weather <br>
+                <h4>Weather</h3> 
+                Current Temp: <span id="current-temp"></span>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                  </figure>
                 Visit Count: <span class="visits"></span>
             </div>
         </section>
@@ -221,6 +194,8 @@
     <script src="./scripts/scripts.js"></script>
     <script src="./scripts/getDates.js"></script>
     <script src="./scripts/hamburger-menu.js"></script>
+    <script src="./scripts/weather.js"></script>
+    <script src="./scripts/week-links.js"></script>
 </body>
 
 </html>
