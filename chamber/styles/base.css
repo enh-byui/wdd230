@@ -173,6 +173,8 @@ main h3 {
     margin: 0rem;
 }
 
+/*---------- Home ------------*/
+
 .card {
     box-shadow: 1px 1px 4px 1px #888888;
     border-radius: 3px;
@@ -237,6 +239,29 @@ main h3 {
 .announcement-body p {
     margin: 0rem;
     padding: 0rem;
+}
+
+.weather-icon {
+    text-align: center
+}
+
+.forecast {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.forecast thead {
+    font-size: .8rem;
+    text-align: center;
+}
+
+.forecast tbody {
+    font-size: .7rem;
+    text-align: center;   
+}
+
+.forecast td {
+    border: solid 1px #999;
 }
 
 /* Discover Page */
