@@ -241,6 +241,10 @@ main h3 {
     padding: 0rem;
 }
 
+.announcement-image {
+    text-align: center;
+}
+
 .weather-icon {
     text-align: center
 }
