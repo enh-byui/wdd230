@@ -32,7 +32,7 @@ async function apiForecastFetch() {
       }
     }
 
-    console.log(forecast);
+
 
     Object.entries(forecast).forEach(([elementKey, element]) => {
       let tr = document.createElement('tr');
@@ -50,7 +50,6 @@ async function apiForecastFetch() {
       
     });
 
-    console.log(forecast);
   }
   
   apiForecastFetch();
