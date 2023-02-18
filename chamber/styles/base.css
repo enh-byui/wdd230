@@ -175,6 +175,13 @@ main h3 {
 
 /*---------- Home ------------*/
 
+.banner {
+    background: #457B9D;
+    color: #ffffff;
+    margin: 0rem;
+    padding: 0.7rem;
+}
+
 .card {
     box-shadow: 1px 1px 4px 1px #888888;
     border-radius: 3px;

@@ -19,6 +19,9 @@ async function apiForecastFetch() {
   }
 
   function displayForecastResults(data) {
+
+    console.table(data);
+
     data.forEach(element => {
       let tr = document.createElement('tr');
       let td1 = document.createElement('td');
