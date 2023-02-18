@@ -9,7 +9,7 @@ async function apiForecastFetch() {
       if (response.ok) {
         const data = await response.json();
         //console.log(data); // testing only
-        displayForecastResults(data.list); // uncomment when ready
+        displayForecastResults(data); // uncomment when ready
       } else {
           throw Error(await response.text());
       }
@@ -20,11 +20,25 @@ async function apiForecastFetch() {
 
   function displayForecastResults(data) {
 
-    data.forEach(element => {
+    const currentDate = new Date();
+    let forecast = {};
+    for (let i = 0; i < data.list.length; i++) {
+      const dateTime = new Date(data.list[i].dt * 1000);
+      const date = dateTime.toISOString().slice(0, 10);
+      if (date > currentDate.toISOString().slice(0, 10) && Object.keys(forecast).length < 3) {
+        if (!(date in forecast)) {
+          forecast[date] = data.list[i];
+        }
+      }
+    }
+
+    console.log(forecast);
+
+    Object.entries(forecast).forEach(([elementKey, element]) => {
       let tr = document.createElement('tr');
       let td1 = document.createElement('td');
       let td2 = document.createElement('td');
-      let text1 = document.createTextNode(element.dt_txt);
+      let text1 = document.createTextNode(elementKey);
       let text2 = document.createTextNode(`${element.main.temp} °F`);
 
       td1.appendChild(text1);
@@ -35,6 +49,8 @@ async function apiForecastFetch() {
       forecastTable.appendChild(tr);
       
     });
+
+    console.log(forecast);
   }
   
   apiForecastFetch();
